@@ -1,0 +1,20 @@
+/* pages/compile/compile.wxss */
+@import "/template/login/index.wxss";
+
+page {
+  padding-bottom: 480rpx;
+}
+
+.compile-wrap {
+  width: 100%;
+  /* padding: 0 40rpx; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  /* transform: translateX(-50%); */
+}
+
+.weui-btn {
+  background-color: #50C9C3;
+  color: #fff;
+}

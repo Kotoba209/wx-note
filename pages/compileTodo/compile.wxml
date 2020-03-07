@@ -1,0 +1,28 @@
+<!-- pages/compile/compile.wxml -->
+<!-- <import src="/template/login/index.wxml" /> -->
+<scroll-view scroll-y="{{true}}" class="list">
+  <view class="weui-cells__title">今日待办事项：</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell" wx:for="{{list}}" :key="index">
+      <view class="weui-cell__bd">{{index+1}}. {{item.jsonData.some || ''}}</view>
+      <view class="weui-cell__ft" bindtap="handleDel" data-id='{{item.id}}'>删除</view>
+    </view>
+  </view>
+  <view wx:if="{{list.length < 1}}">
+    <non-data></non-data>
+  </view>
+</scroll-view>
+<view class="compile-wrap">
+  <view class="weui-cells__title"></view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea value="{{textVal}}" bindinput="handleTextInput" class="weui-textarea" placeholder="请输入今日待办事项~" style="height: 2.3em" />
+      </view>
+    </view>
+  </view>
+  <view class="btn-wrap">
+    <button class="weui-btn" bindtap="handleSubmit">提交</button>
+  </view>
+</view>
+<!-- <template is="apifmLogin" data="{{wxlogin: wxlogin}}" /> -->

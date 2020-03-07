@@ -1,0 +1,15 @@
+<!-- pages/hisTodoList/hisTodoList.wxml -->
+<scroll-view scroll-y="{{true}}" class="list">
+  <view class="weui-cells__title">历史待办事项：</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell" wx:for="{{list}}" :key="index">
+      <view class="weui-cell__bd">{{index+1}}. {{item.jsonData.some || ''}}</view>
+      <view class="weui-cell__ft" bindtap="handleDel" data-id='{{item.id}}'>
+        {{item.jsonData.time || ''}}
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{list.length < 1}}">
+    <non-data></non-data>
+  </view>
+</scroll-view>

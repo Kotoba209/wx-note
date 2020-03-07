@@ -1,0 +1,15 @@
+/* components/non-data/non-data.wxss */
+@import './icon.wxss';
+
+.none {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 100rpx auto;
+}
+
+.text {
+  color: #999;
+  font-size: 40rpx;
+}

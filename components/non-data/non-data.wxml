@@ -1,0 +1,6 @@
+<!-- components/non-data/non-data.wxml -->
+<view class="none">
+  <text class="iconfont icon-zanwujilu"></text>
+  <view class="text">暂无记录</view>
+  <!-- <image class="nonImg" src="http://s2.hdslb.com/bfs/static/blive/blfe-message-web/static/img/nodata.4d721f9d.png" mode="widthFix" /> -->
+</view>

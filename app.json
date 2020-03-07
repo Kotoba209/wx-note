@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/compileTodo/compile",
+    "pages/hisTodoList/hisTodoList",
+    "pages/compileFlag/compile",
+    "pages/hisFlagList/hisFlagList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "白茶相伴",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
